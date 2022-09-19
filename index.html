@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Show</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <script>
+        b = 0
+        function slideshow() {
+            switch (b) {
+                case 0: foto.src = "1.jpg";
+                    break;
+                case 1: foto.src = "2.jpg";
+                    break;
+                case 2: foto.src = "3.jpg";
+                    break;
+                case 3: foto.src = "4.jpg";
+                    break;
+                case 4: foto.src = "5.jpg";
+                    b = -1;
+            }
+            b++;
+        }
+    </script>
+</head>
+
+<body onload="setInterval('slideshow()',1200)" ;>
+    <p><img src="narutin.jpg" name="foto"> </p>
+</body>
+
+</html>
